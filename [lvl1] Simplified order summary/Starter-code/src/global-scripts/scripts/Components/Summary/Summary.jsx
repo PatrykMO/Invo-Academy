@@ -23,7 +23,7 @@ const Summary = () => {
 
                 <div className="left">
                     <img
-                        src='public/icons/90.png'
+                        src='public/90.png'
                     />
                     <div className='element'/>
                     <div className="plan-type">
