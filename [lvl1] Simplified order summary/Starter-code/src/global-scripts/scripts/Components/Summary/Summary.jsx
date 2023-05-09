@@ -8,7 +8,8 @@ const Summary = () => {
 
         <div className="img-container">
             <img
-                src='public/hero.jpg'
+                src={'/static/images/hero.jpg'}
+                alt='hero-img'
             />
         </div>
 
@@ -23,7 +24,8 @@ const Summary = () => {
 
                 <div className="left">
                     <img
-                        src='public/90.png'
+                        src={'/static/images/90.png'}
+                        alt='note-icon'
                     />
                     <div className='element'/>
                     <div className="plan-type">
