@@ -1,6 +1,6 @@
-.container {
-    width: 415px;
-    height: 560px;
+.nftcard-component {
+    width: 413px;
+    height: 556px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -8,52 +8,68 @@
     justify-content: center;
     align-items: center;
 
-    .hero {
+    &_header {
         width:100%;
-        height: 400px;
+        height: 399px;
         border-radius: 20px 20px 0 0;
-        background-image: linear-gradient(to bottom, rgba(19, 36, 59, 0), rgba(19, 36, 59, 100)),
-        url('/static/images/Hero.jpg');
-        background-size: auto 460px;
-        background-position: 35% 100%;
+        background-image: url('/static/images/Hero.png');
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
 
-        .info {
-            width: 280px;
-            height: 115px;
+        &_content-container {
+            width: 278px;
+            min-height: 115px;
             margin: 0 0 32px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
 
-            h1 {
+            &_title {
                 font-weight: 600;
                 font-size: 24px;
                 line-height: 33px;
                 color: var(--color-title);
+                margin: 0;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
-            h3 {
+            &_desc {
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 160%;
                 letter-spacing: -0.01em;
                 color: var(--color-body);
+                margin: 0;
+                flex-grow: 1;
+                overflow: scroll;
+                max-height: 58px;
+            }
+
+            &_desc::-webkit-scrollbar {
+                display: none;
             }
         }
     }
 
-    .details {
+    &_main {
         display: flex;
         flex-direction: column;
-        width: 85%;
-        height: 160px;
+        width: 349px;
+        height: 157px;
 
-        .top {
+        &_content-container {
             display: flex;
             flex-direction: row;
             width: 100%;
+            margin-top: 8px;
+            height: 29px;
 
-            .left {
+            &_price {
                 display: flex;
                 flex: 1;
                 align-items: center;
@@ -73,7 +89,7 @@
                 }
             }
 
-            .right {
+            &_time {
                 display: flex;
                 justify-content: flex-end;
                 flex: 1;
@@ -95,18 +111,20 @@
             }
         }
 
-        .stroke {
+        &_stroke {
             width: 100%;
             height: 1px;
             background-color: #2B3953;
-            margin: 16px 0 16px 0;
+            margin: 32px 0 16px 0;
         }
 
-        .bottom {
+        &_author {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: 16px;
+            height: 40px;
+            margin-top: 8px;
 
             img {
                 width: 40px;
@@ -132,43 +150,55 @@
 }
 
 @media screen and (max-width: 834px) {
-    .container {
-        width: 345px;
-        height: 485px;
+    .nftcard-component {
+        max-width: 343px;
+        height: 486px;
+        margin: 20px 16px;
 
-        .hero {
-            background-size: auto 400px;
+        &_header {
             width: 100%;
-            height: 4;
+            height: 410;
+            background-image: url('/static/images/HeroMobile.png');
 
-            .info {
+
+            &_content-container {
                 width: 250px;
                 height: 110px;
+                margin: 0 0 10px 23px;
+                gap: 16px;
             }
         }
 
-        .details {
+        &_main {
+            max-width: 295px;
+            margin: 0 24px;
 
-            .top {
-                height: 45px;
-                .left {
-                    h3 {
-                        font-size: 16px;
-                    }
+            &_content-container {
+                &_price {
+                   h3 {
+                    font-size: 16px;
+                   }
                 }
 
-                .right {
+                &_time {
+                    margin-right: 10px;
                     p {
                         font-size: 14px;
                     }
                 }
             }
 
-            .bottom {
+            &_stroke {
+                margin: 18px 0 16px 0;
+            }
+
+            &_author {
+                margin-top: 4px;
                 h3 {
                     font-size: 14px;
                 }
             }
         }
+
     }
 }

@@ -4,18 +4,22 @@ import './NFTCard.scss';
 
 const NFTCard = () => {
   return (
-    <div className="container">
+    <div className="nftcard-component">
 
-      <div className="hero">
-        <div className="info">
-          <h1>Equilibrium #3429</h1>
-          <h3>Equilibrium is an NFT that will appeal to many players.</h3>
+      <div className="nftcard-component_header">
+        <div className="nftcard-component_header_content-container">
+          <h1 className='nftcard-component_header_content-container_title'>
+            Equilibrium #3429
+          </h1>
+          <h3 className='nftcard-component_header_content-container_desc'>
+            Equilibrium is an NFT that will appeal to many players.
+          </h3>
         </div>
       </div>
 
-      <div className="details">
-        <div className="top">
-          <div className="left">
+      <div className="nftcard-component_main">
+        <div className="nftcard-component_main_content-container">
+          <div className="nftcard-component_main_content-container_price">
             <img
               src={'/static/images/diamond.png'}
               alt='diamond'
@@ -23,7 +27,7 @@ const NFTCard = () => {
             <h3>0.041 ETH</h3>
           </div>
 
-          <div className="right">
+          <div className="nftcard-component_main_content-container_time">
             <img
               src={'/static/images/clock.png'}
               alt='clock'
@@ -33,9 +37,9 @@ const NFTCard = () => {
 
         </div>
 
-        <div className="stroke"/>
+        <div className="nftcard-component_main_stroke"/>
 
-        <div className="bottom">
+        <div className="nftcard-component_main_author">
           <img
             src={'/static/images/Eva.jpg'}
             alt='Eva'
