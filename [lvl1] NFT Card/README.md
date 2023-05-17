@@ -1,7 +1,8 @@
 NFT Card
 =======
 
-![Screenshot 2023-05-10 at 19 52 38](https://github.com/PatrykMO/Invo-Academy/assets/104906717/23dbfa66-4b84-448a-adcc-37fbc275d918)
+![Screenshot 2023-05-17 at 19 51 56](https://github.com/PatrykMO/Invo-Academy/assets/104906717/66c6981d-0d26-4bea-b611-5b82f1c5e273)
+
 
 
 <hr />
