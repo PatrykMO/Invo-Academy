@@ -1,0 +1,22 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+@import "styles/Tile.scss";
+
+body {
+  font-family: 'DM Sans';
+  background: var(--color-primary);
+  color: var(--color-secondary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100dvh;
+  min-height: 100vh;
+  min-width: 100dvw;
+  min-width: 100vw;
+}

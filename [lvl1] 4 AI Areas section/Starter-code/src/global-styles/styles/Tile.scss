@@ -1,0 +1,131 @@
+.tile {
+    width: 268px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-box);
+    border-radius: 24px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+
+    transition: transform 0.3s, background-color 0.3s;
+
+    & &__icon {
+        width: 64px;
+        height: 64px;
+        margin-top: 24px;
+    }
+
+    & &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 16px 0;
+    }
+
+    & &__desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.5;
+        width: 236px;
+        margin: 0 0 16px 0;
+    }
+}
+
+.tile:hover {
+    transform: translateY(-10px);
+    background-color: #313750;
+}
+
+
+@media screen and (max-width: 1180px) {
+    .tile {
+        width: 240px;
+        min-height: 218px;
+        border-radius: 20px;
+
+        & &__icon {
+            width: 56px;
+            height: 56px;
+            margin-top: 20px;
+            margin-left: -4px;
+        }
+
+        & &__title {
+            margin-left: -3px;
+        }
+
+        & &__desc {
+            font-size: 14px;
+            line-height: 22px;
+            width: 209px;
+            margin-left: -3px;
+        }
+    }
+}
+
+@media screen and (max-width: 580px)  {
+    .tile {
+        width: 343px;
+        min-height: 196px;
+
+        & &__icon {
+            margin-top: 20px;
+            margin-left: -2px;
+        }
+
+        & &__desc {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            width: 303px;
+            margin: 0 0 20px -3px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 375px)  {
+    .tile {
+        width: auto;
+        height: auto;
+
+        & &__icon {
+            margin-top: 20px;
+            margin-left: -2px;
+        }
+
+        & &__desc {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            width: 303px;
+            margin: 0 0 20px -3px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 375px)  {
+    .tile {
+        width: auto;
+        height: auto;
+
+        & &__icon {
+            margin-top: 20px;
+            margin-left: -2px;
+        }
+
+        & &__desc {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            width: auto;
+            margin: 0 5px 20px 5px;
+
+        }
+    }
+}
