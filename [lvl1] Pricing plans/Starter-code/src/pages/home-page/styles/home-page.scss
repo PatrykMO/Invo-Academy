@@ -1,0 +1,28 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+
+.component-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 75px 0;
+}
+
+@media screen and (max-width: 1050px) {
+    .component-container {
+        margin-right: 16px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .component-container {
+        margin: 0 14px 2px 0;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .component-container {
+        margin: 10px 10px 10px 10px
+    }
+}
