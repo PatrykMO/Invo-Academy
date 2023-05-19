@@ -1,0 +1,146 @@
+@media screen and (max-width: 834px) {
+    .nftcard-component {
+        max-width: 343px !important;
+        min-height: 486px !important;
+        margin: 354px 248px 354px 246px !important;
+
+        & &__background {
+            width: 343px !important;
+            height: 410px;
+            background-image: url('/static/images/HeroMobile.png');
+            border-radius: 20px 20px 0 0;
+            z-index: 10;
+
+            &__img {
+                display: none;
+            }
+        }
+
+        & &__content {
+            max-width: 295px;
+            margin-top: 230px !important;
+            margin-left: 33px !important;
+            margin-bottom: 20px !important;
+
+            &__info-container {
+                width: 251px;
+                min-height: 107px !important;
+                gap: 16px !important;
+
+                &__desc {
+
+                }
+            }
+
+            &__details-container {
+                width: 295px !important;
+                gap: 84px !important;
+                margin-top: 22px !important;
+                margin-left: 1px;
+
+                &__price {
+                    width: 106px !important;
+                    height: 26px !important;
+                    margin-top: 1px;
+
+                    &__value {
+                        font-size: 16px !important;
+                    }
+                }
+
+                &__time {
+                    width: 96px !important;
+                    height: 22px !important;
+                    margin-right: 8px;
+                    gap: 8px;
+
+                    &__value {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+
+            &__stroke {
+                margin-top: 20px !important;
+            }
+
+            &__author {
+                width: 203px !important;
+                height: 40px !important;
+                margin-top: -5px !important;
+
+                &__name {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .nftcard-component {
+        width: auto !important;
+        height: auto !important;
+        margin: 163px 16px 163px 16px !important;
+
+        & &__background {
+            max-width: 343px !important;
+            height: auto;
+            z-index: 10;
+        }
+
+        & &__content {
+            max-width: 295px;
+
+            &__info-container {
+                max-width: 251px;
+                min-height: 107px !important;
+            }
+
+            &__details-container {
+                max-width: 295px !important;
+
+                &__price {
+                    max-width: 106px !important;
+                }
+            }
+
+            &__author {
+                max-width: 203px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .nftcard-component {
+        margin: 80px 8px 80px 8px !important;
+        max-width: 280px !important;
+
+        & &__background {
+            max-width: 280px !important;
+        }
+
+        & &__content {
+            max-width: 260px;
+
+            &__info-container {
+                max-width: 251px;
+                min-height: 107px !important;
+            }
+
+            &__details-container {
+                max-width: 260px !important;
+                gap: 50px !important;
+
+                &__price {
+                    max-width: 106px !important;
+                }
+            }
+
+            &__author {
+                max-width: 203px !important;
+            }
+        }
+    }
+}
