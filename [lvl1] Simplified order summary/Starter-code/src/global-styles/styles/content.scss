@@ -55,6 +55,10 @@
         border: none;
         gap: 112px;
 
+        a {
+            color: var(--color-primary)
+        }
+
         &__details {
             display: flex;
             flex-direction: row;
