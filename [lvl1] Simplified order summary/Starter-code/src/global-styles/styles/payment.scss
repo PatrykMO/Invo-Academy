@@ -1,0 +1,34 @@
+.payment-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    a {
+        text-decoration: none;
+    }
+
+    & &__cancelation {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: right;
+        letter-spacing: -0.01em;
+        border-bottom: 1px solid #151827;
+        height: 22px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .payment-container {
+
+        & &__cancelation {
+            font-size: 14px;
+            line-height: 18px;
+            height: 18px;
+            margin-top: 17px;
+        }
+    }
+}

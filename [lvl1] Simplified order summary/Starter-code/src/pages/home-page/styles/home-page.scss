@@ -1,2 +1,47 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
+.component-container {
+    height: 665px;
+    width: 460px;
+    background: var(--color-white);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 73px 65px 73px 50px;
+    transition: transform 0.3s;
+
+}
+
+.component-container:hover {
+    transform: scale(1.05);
+    box-shadow: 25px 15px 15px rgba(0, 0, 0, 0.411);
+}
+
+@media screen and (max-width: 860px) {
+    .component-container {
+        width: 343px;
+        height: 586px;
+        margin: 304px 89px 304px 75px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .component-container {
+        margin: 113px 30px 113px 16px;
+        max-width: 343px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .component-container {
+        margin: 113px 30px 113px 16px;
+        max-width: 280px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .component-container {
+        margin: 113px 10px;
+    }
+}
