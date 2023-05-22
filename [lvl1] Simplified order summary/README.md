@@ -1,7 +1,8 @@
 Simplified order summary
 =======
 
-<img width="1440" alt="Screenshot 2023-05-09 at 21 18 28" src="https://github.com/PatrykMO/Invo-Academy/assets/104906717/86600d03-2036-4309-993d-a615a989b4c0">
+<img width="1200" alt="Screenshot 2023-05-22 at 10 54 19" src="https://github.com/PatrykMO/Invo-Academy/assets/104906717/40b07850-451f-4f7b-90e5-aa321c87dfd9">
+
 
 <hr />
 
