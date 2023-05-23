@@ -27,7 +27,7 @@ const html = `<div class="component-wrapper">
           Machine Learning
         </h2>
         <p class="tile__desc">
-          The ability of AI systems to learn from data and improve their performance
+          <span>The ability of AI systems to</span> learn from data and improve their performance
         </p>
       </div>
 
@@ -57,7 +57,7 @@ const html = `<div class="component-wrapper">
           Natural Language
         </h2>
         <p class="tile__desc">
-          The ability of AI systems to understand, interpret, and generate human language
+          <span>The ability of AI systems to</span> understand, interpret, and generate human language
         </p>
       </div>
 

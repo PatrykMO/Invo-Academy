@@ -1,13 +1,11 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
-
 .component-wrapper {
     display: flex;
     width: 1136px;
     min-height: 511px;
     gap: 109px;
-    margin: 140px 100px 100px 100px;
-
+    margin: 159px 152px 140px 152px;
 }
 
 .header-container {
@@ -18,6 +16,7 @@
     justify-content: center;
     align-items: center;
     gap: 24px;
+    margin: 0;
 
     & &__title {
         font-weight: 500;
@@ -52,6 +51,11 @@
         min-height: 240px;
         gap: 24px;
     }
+
+    & &__bottom-row {
+        gap: 19px;
+        justify-content: flex-end;
+    }
 }
 
 @media screen and (max-width: 1180px) {
@@ -59,15 +63,15 @@
         flex-direction: column;
         width: 496px;
         min-height: 700px;
-        gap: 24px;
-        margin: 240px 75px;
+        gap: 16px;
+        margin: 247px 169px;
     }
 
     .header-container {
         width: 100%;
         align-items: flex-start;
+        justify-content: flex-start;
         gap: 16px;
-
 
         & &__desc {
             width: 496px;
@@ -128,13 +132,11 @@
     }
 }
 
-
 @media screen and (max-width: 375px) {
     .component-wrapper {
         width: auto;
         height: auto;
         gap: 24px;
-        margin: 10px 16px 10px 16px;
     }
 
     .header-container {
@@ -171,11 +173,12 @@
 
 @media screen and (max-width: 320px) {
     .component-wrapper {
-        width: 270px;
+        width: 250px;
+        margin: 16px 10px;
     }
 
     .header-container {
-        width: 270px;
+        width: 250px;
         height: auto;
         align-items: center;
         justify-content: center;
