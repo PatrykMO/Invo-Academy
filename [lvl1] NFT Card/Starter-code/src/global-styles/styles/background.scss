@@ -1,0 +1,48 @@
+.nftcard {
+    & &__background {
+        position: absolute;
+        z-index: -1;
+        height: 399px;
+        width: 413px;
+        top: 0;
+        left: 0;
+    }
+
+    & &__background--img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    @media screen and (max-width: 834px) {
+        & &__background {
+            max-width: 343px;
+            height: 410px;
+            background-image: url('/static/images/HeroMobile.png');
+            background-repeat: no-repeat;
+            border-radius: 20px 20px 0 0;
+        }
+
+        & &__background--img{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+        & &__background {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        & &__background {
+            max-width: 280px;
+        }
+    }
+
+    @media screen and (max-width: 290px) {
+        & &__background {
+            max-width: 270px;
+        }
+    }
+}
+
