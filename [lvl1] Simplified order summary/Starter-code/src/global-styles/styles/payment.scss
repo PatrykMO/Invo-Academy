@@ -51,6 +51,11 @@
         height: 22px;
     }
 
+    & &__cancelation-link--nounderline {
+        border-bottom: none;
+        color: var(--color-primary);
+    }
+
     @media screen and (max-width: 860px) {
         & &__button {
             max-width: 311px;
