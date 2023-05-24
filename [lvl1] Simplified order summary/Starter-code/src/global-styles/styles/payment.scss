@@ -40,7 +40,8 @@
         text-decoration: none;
     }
 
-    & &__cancelation {
+    & &__cancelation,
+    & &__cancelation-link--nounderline {
         font-weight: 700;
         font-size: 16px;
         line-height: 160%;
