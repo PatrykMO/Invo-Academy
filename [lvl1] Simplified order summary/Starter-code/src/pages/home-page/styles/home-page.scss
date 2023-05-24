@@ -8,40 +8,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 73px 65px 73px 50px;
-    transition: transform 0.3s;
+    margin: 73px 490px 73px 490px;
 
-}
-
-.component-container:hover {
-    transform: scale(1.05);
-    box-shadow: 25px 15px 15px rgba(0, 0, 0, 0.411);
-}
-
-@media screen and (max-width: 860px) {
-    .component-container {
+    @media screen and (max-width: 860px) {
         width: 343px;
         height: 586px;
-        margin: 304px 89px 304px 75px;
+        margin: 304px 245px 304px 246px;
     }
-}
 
-@media screen and (max-width: 420px) {
-    .component-container {
-        margin: 113px 30px 113px 16px;
+    @media screen and (max-width: 575px) {
+        margin: 180px 80px;
         max-width: 343px;
     }
-}
 
-@media screen and (max-width: 360px) {
-    .component-container {
-        margin: 113px 30px 113px 16px;
-        max-width: 280px;
+    @media screen and (max-width: 430px) {
+        margin: 113px 16px;
+        max-width: 343px;
     }
-}
 
-@media screen and (max-width: 320px) {
-    .component-container {
+    @media screen and (max-width: 360px) {
+        max-width: 280px;
+        width: auto;
+    }
+
+    @media screen and (max-width: 320px) {
         margin: 113px 10px;
     }
+
+    @media screen and (max-width: 300px) {
+        width: 260px;
+    }
 }
+

@@ -6,7 +6,37 @@
     align-items: center;
     gap: 5px;
 
-    a {
+    & &__button {
+        width: 100%;
+        height: 56px;
+        background: var(--color-primary);
+        color: var(--color-white);
+        border-radius: 16px;
+        border: none;
+        margin: 32px 1px 0 0;
+        cursor: pointer;
+        transition: all 0.2s;
+        position: relative;
+    }
+
+    & &__button:hover {
+        background: var(--color-button-hover);
+    }
+
+    & &__spinner {
+        position: absolute;
+        top: 16px;
+        left: 204px;
+        display: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid var(--color-white);
+        border-top-color: var(--color-body);
+        animation: spinnerAnimation 1s infinite linear;
+    }
+
+    & &__cancelation-link--nounderline {
         text-decoration: none;
     }
 
@@ -16,14 +46,15 @@
         line-height: 160%;
         text-align: right;
         letter-spacing: -0.01em;
-        border-bottom: 1px solid #151827;
+        border-bottom: 1px solid var(--color-underline);
         height: 22px;
-        color: var(--color-primary)
     }
-}
 
-@media screen and (max-width: 860px) {
-    .payment-container {
+    @media screen and (max-width: 860px) {
+        & &__button {
+            max-width: 311px;
+            margin-top: 33px;
+        }
 
         & &__cancelation {
             font-size: 14px;
@@ -31,5 +62,39 @@
             height: 18px;
             margin-top: 17px;
         }
+
+        & &__spinner {
+            left: 145.5px;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        & &__button {
+            max-width: 270px;
+            margin-top: 33px;
+        }
+
+        & &__spinner {
+            left: 125px;
+        }
+    }
+
+    @media screen and (max-width: 300px) {
+        & &__button {
+            width: 250px;
+        }
+
+        & &__spinner {
+            left: 115px;
+        }
+    }
+}
+
+@keyframes spinnerAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
