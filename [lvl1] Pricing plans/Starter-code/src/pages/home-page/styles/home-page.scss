@@ -1,28 +1,79 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
-
 .component-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 0 75px 0;
-}
+    margin: 120px 218px;
 
-@media screen and (max-width: 1050px) {
-    .component-container {
-        margin-right: 16px;
+    @media screen and (max-width: 1050px) {
+        margin: 86px 80px;
+    }
+
+    @media screen and (max-width: 750px) {
+        margin: 72px 24px;
+    }
+
+    @media screen and (max-width: 350px) {
+        margin: 72px 10px 10px 10px
     }
 }
 
-@media screen and (max-width: 750px) {
-    .component-container {
-        margin: 0 14px 2px 0;
+.header {
+    width: 244px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 48px 0;
+
+    & &__title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -0.03em;
+        margin: 3px 1px 15px 0;
+    }
+
+    & &__desc {
+        height: 44px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: var(--color-desc);
+        margin: 2px 0 0 1px;
     }
 }
 
-@media screen and (max-width: 370px) {
-    .component-container {
-        margin: 10px 10px 10px 10px
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 1004px;
+    height: 414px;
+    position: relative;
+
+    @media screen and (max-width: 1050px) {
+        height: 866px;
+        width: 674px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    @media screen and (max-width: 750px) {
+        width: 325px;
+        height: 1274px;
+        margin-right: 1px;
+    }
+
+    @media screen and (max-width: 370px) {
+        max-width: 325px;
+        width: 260px;
+        height: 1274px;
     }
 }
+

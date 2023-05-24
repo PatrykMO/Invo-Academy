@@ -1,4 +1,4 @@
-.main__button {
+.button {
     width: 260px;
     border-radius: 16px;
     position: absolute;
@@ -13,14 +13,35 @@
     letter-spacing: -0.01em;
     text-align: center;
     cursor: pointer;
+    transition: all 0.2s;
 
     &.--purple {
         background: var(--color-button);
     }
+
+    @media screen and (max-width: 1050px) {
+        position: absolute;
+        width: 260px;
+        right: 0;
+        bottom: 0;
+    }
+
+    @media screen and (max-width: 750px) {
+            position: absolute;
+            width: 263px;
+            left: 0;
+            bottom: 32px;
+    }
+
+    @media screen and (max-width: 370px) {
+            max-width: 240px;
+            width: auto;
+            left: 10px;
+            bottom: 16px;
+    }
 }
 
-
-.main__button:hover {
+.button:hover {
     background: var(--color-hover-v1);
 
     &.--purple {
@@ -28,7 +49,7 @@
     }
 }
 
-.main__button:active {
+.button:active {
     background: var(--color-pressed-v1);
 
     &.--purple {
@@ -36,30 +57,3 @@
     }
 }
 
-@media screen and (max-width: 1050px) {
-    .main__button {
-        position: absolute;
-        width: 260px;
-        right: 0;
-        bottom: 0;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .main__button {
-        position: absolute;
-        width: 263px;
-        left: 0;
-        bottom: 32px;
-
-    }
-}
-
-@media screen and (max-width: 370px) {
-    .main__button {
-        max-width: 240px;
-        width: auto;
-        left: 10px;
-        bottom: 16px;
-    }
-}
