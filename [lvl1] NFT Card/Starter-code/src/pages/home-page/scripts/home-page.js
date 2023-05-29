@@ -13,45 +13,45 @@ const html = `
         </div>
 
         <div class="nftcard__content">
-            <div class="nftcard__content--info-container">
-                <h1 class='nftcard__content--title'>
+            <div class="nftcard__info-container">
+                <h1 class='nftcard__title'>
                     Equilibrium #3429
                 </h1>
-                <h3 class='nftcard__content--desc'>
+                <h3 class='nftcard__desc'>
                     Equilibrium is an NFT that will appeal to many players.
                 </h3>
             </div>
 
-            <div class="nftcard__content--details-container">
-                <div class="nftcard__content--price-container">
+            <div class="nftcard__details-container">
+                <div class="nftcard__price-container">
                     <img
                         src='/static/images/diamond.png'
                         alt='diamond'
-                        class="nftcard__content--icon"
+                        class="nftcard__icon"
                     />
-                    <h3 class="nftcard__content--value">0.041 ETH</h3>
+                    <h3 class="nftcard__price-value">0.041 ETH</h3>
                 </div>
 
-                <div class="nftcard__content--time-container">
+                <div class="nftcard__time-container">
                     <img
                         src='/static/images/clock.png'
                         alt='clock'
-                        class="nftcard__content--icon"
+                        class="nftcard__icon"
                     />
-                    <p class="nftcard__content--time-value">3 days left</p>
+                    <p class="nftcard__time-value">3 days left</p>
                 </div>
             </div>
 
-            <div class="nftcard__content--stroke"></div>
+            <div class="nftcard__stroke"></div>
 
-            <div class="nftcard__content--author">
+            <div class="nftcard__author-container">
                 <img
                     src='/static/images/Eva.jpg'
                     alt='Eva'
-                    class="nftcard__content--photo"
+                    class="nftcard__photo"
                 />
-                <h3 class="nftcard__content--name">
-                    Creation of <span>Eva Smitch</span>
+                <h3 class="nftcard__name">
+                    Creation of <span class="nftcard__name--bold">Eva Smitch</span>
                 </h3>
             </div>
         </div>

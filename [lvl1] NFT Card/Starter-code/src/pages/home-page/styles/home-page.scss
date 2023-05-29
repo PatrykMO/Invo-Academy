@@ -16,13 +16,18 @@
     @media screen and (max-width: 834px) {
         max-width: 343px;
         min-height: 486px;
-        margin: 354px 245px 354px 246px;
     }
 
-    @media screen and (max-width: 440px) {
+    @media screen and (max-width: 450px) {
         width: auto;
         height: auto;
-        margin: 163px 16px 163px 16px;
+        margin: 80px 16px 80px 16px;
+    }
+
+    @media screen and (max-width: 475px) {
+        width: auto;
+        height: auto;
+        margin: 80px 5px 80px 5px;
     }
 
     @media screen and (max-width: 360px) {
@@ -30,7 +35,7 @@
         max-width: 280px;
     }
 
-    @media screen and (max-width: 290px) {
+    @media screen and (max-width: 300px) {
         margin: 16px 5px 16px 5px;
         max-width: 270px;
     }

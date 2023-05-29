@@ -1,5 +1,5 @@
 .nftcard {
-    & &__content--details-container {
+    & &__details-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -8,7 +8,7 @@
         margin-top: 39px;
     }
 
-    & &__content--price-container {
+    & &__price-container {
         display: flex;
         flex-direction: row;
         height: 29px;
@@ -18,12 +18,12 @@
         width: 115px;
     }
 
-    & &__content--icon {
+    & &__icon {
         width: 20px;
         height: 20px;
     }
 
-    & &__content--value {
+    & &__price-value {
         font-weight: 700;
         font-size: 18px;
         line-height: 160%;
@@ -32,7 +32,7 @@
         margin-left: 1px;
     }
 
-    & &__content--time-container {
+    & &__time-container {
         display: flex;
         flex-direction: row;
         height: 29px;
@@ -41,7 +41,7 @@
         width: 105px;
     }
 
-    & &__content--time-value {
+    & &__time-value {
         font-weight: 500;
         font-size: 16px;
         line-height: 160%;
@@ -49,14 +49,14 @@
         color: var(--color-body);
     }
 
-    & &__content--stroke {
+    & &__stroke {
         width: 100%;
         height: 1px;
         background-color: var(--color-stroke);
         margin: 32px 0 24px 0;
     }
 
-    & &__content--author {
+    & &__author-container {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -64,13 +64,13 @@
         height: 40px;
     }
 
-    & &__content--photo {
+    & &__photo {
         width: 40px;
         height: 40px;
         border-radius: 20px;
     }
 
-    & &__content--name {
+    & &__name {
         font-weight: 500;
         font-size: 16px;
         line-height: 160%;
@@ -78,58 +78,59 @@
         color: var(--color-body);
         margin: 0;
 
-        span {
+        &--bold {
+            @extend .nftcard__name;
             color: var(--color-title);
             margin-left: 1px;
         }
     }
 
     @media screen and (max-width: 834px) {
-        & &__content--details-container {
+        & &__details-container {
             max-width: 295px;
             gap: 84px;
             margin-top: 22px;
             margin-left: 1px;
         }
 
-        & &__content--price-container {
+        & &__price-container {
             max-width: 106px;
             height: 26px;
             margin-top: 1px;
         }
 
-        & &__content--value {
+        & &__price-value {
                 font-size: 16px;
         }
 
-        & &__content--time-container {
+        & &__time-container {
             width: 96px;
             height: 22px;
             margin-right: 8px;
             gap: 8px;
         }
 
-        & &__content--time-value {
+        & &__time-value {
             font-size: 14px;
         }
 
-        & &__content--stroke {
+        & &__stroke {
             margin-top: 20px;
         }
 
-        & &__content--author {
+        & &__author-container {
             max-width: 203px;
             height: 40px;
             margin-top: -5px;
         }
 
-        & &__content--name {
+        & &__name {
             font-size: 14px;
         }
     }
 
     @media screen and (max-width: 360px) {
-        & &__content--details-container {
+        & &__details-container {
             max-width: 260px;
             gap: 50px;
         }
