@@ -1,13 +1,16 @@
-.card-container,
-.card-container--dark {
-    & &__content__benefits-container,
-    & &__content__benefits-container--dark {
+.card {
+    & &__benefits-container {
         display: flex;
         flex-direction: column;
         gap: 8px;
+
+        &--dark {
+            @extend .card__benefits-container;
+            color: var(--color-secondary);
+        }
     }
 
-    & &__content__benefits-info {
+    & &__benefits-info {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -16,13 +19,13 @@
         max-width: 260px;
     }
 
-    & &__content__benefits-img {
+    & &__benefits-img {
         width: 16px;
         height: 16px;
         margin-bottom: 1px;
     }
 
-    & &__content__benefits-desc {
+    & &__benefits-desc {
         font-weight: 400;
         font-size: 16px;
         line-height: 140%;
@@ -31,9 +34,8 @@
         height: 22px;
     }
 
-    @media screen and (max-width: 1050px) {
-        & &__content__benefits-container,
-        & &__content__benefits-container--dark {
+    @media screen and (max-width: 1120px) {
+        & &__benefits-container{
             position: absolute;
             margin: 0;
             top: 102px;
@@ -41,21 +43,15 @@
         }
     }
 
-    @media screen and (max-width: 750px) {
-        & &__content__benefits-container,
-        & &__content__benefits-container--dark {
+    @media screen and (max-width: 736px) {
+        & &__benefits-container {
             top: 197px;
         }
     }
 
     @media screen and (max-width: 370px) {
-        & &__content__benefits-container,
-        & &__content__benefits-container--dark {
+        & &__benefits-container {
             left: 10px;
         }
     }
-}
-
-.card-container__content__benefits-container--dark{
-    color: var(--color-secondary);
 }
