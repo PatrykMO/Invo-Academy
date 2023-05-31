@@ -1,0 +1,114 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 84px;
+    background: var(--color-black-50);
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & &__arrows-container {
+        width: 116px;
+        height: 46px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 50px;
+        gap: 24px;
+    }
+
+    & &__arrows-background {
+        background: var(--color-black-50);
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: not-allowed;
+
+        &--right {
+            @extend .navbar__arrows-background;
+        }
+    }
+
+    & &__arrows-img--right {
+        transform: rotateZ(180deg);
+    }
+
+    & &__user {
+        width: 177px;
+        height: 44px;
+        border-radius: 50px;
+        background: var(--color-black-70);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 50px;
+        gap: 11px;
+        margin-top: 5px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    & &__user-hover {
+        position: absolute;
+        top: 52px;
+        right: 0;
+        width: 123px;
+        height: 39px;
+        background: var(--color-black-70);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        border: none;
+        visibility: hidden;
+        transition: all 0.2s;
+    }
+
+    &__user-hname {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    & &__user-container {
+        width: 38px;
+        height: 38px;
+        margin-left: 3px;
+    }
+
+    & &__user-photo {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    & &__user-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 18px;
+    }
+
+    @media screen and (max-width: 1020px) {
+        & &__arrows-container {
+            margin-left: 16px;
+        }
+
+        & &__arrows-background--right {
+            display: none;
+        }
+
+        & &__user {
+            display: none;
+        }
+    }
+}
+
+.navbar__user:hover .navbar__user-hover {
+    visibility: visible;
+}

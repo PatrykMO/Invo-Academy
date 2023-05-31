@@ -1,0 +1,195 @@
+.footer {
+    width: 100%;
+    height: 397px;
+    margin: 0;
+    position: relative;
+    margin: 0;
+    display: flex;
+
+    & &__nav {
+        width: 519px;
+        height: 135px;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        position: absolute;
+        top: 100px;
+        left: 22.5%;
+        gap: 100px;
+    }
+
+    & &__nav-column {
+        width: max-content;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    & &__nav-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0 0 8px 0;
+    }
+
+    & &__nav-link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--color-desc);
+        margin: 0;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: all 0.2s;
+    }
+
+    & &__nav-link:hover {
+        text-decoration-line: underline;
+        color: var(--color-primary);
+    }
+
+    & &__stroke {
+        width: 73.9583333%;
+        height: 1px;
+        background-color: var(--color-hover);
+        position: absolute;
+        left: 22.569%;
+        top: 315px;
+    }
+
+    & &__copyright {
+        color: var(--color-desc);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        position: absolute;
+        top: 348px;
+        left: 22.6388%;
+    }
+
+    & &__menu {
+        display: none;
+    }
+
+    @media screen and (max-width: 1020px) {
+        height: 82px;
+        position: sticky;
+        bottom: 0;
+        background: var(--color-black-100);
+        border-top: 1px solid var(--color-hover);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & &__nav {
+            display: none;
+        }
+
+        & &__stroke {
+            display: none;
+        }
+
+        & &__copyright {
+            display: none;
+        }
+
+        & &__menu {
+            width: 477px;
+            height: 44.5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 103px;
+        }
+
+        & &__menu-container {
+            width: fit-content;
+            height: 44px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        & &__menu-container:hover .footer__menu-text {
+            color: var(--color-primary);
+        }
+
+        & &__menu-icon {
+            width: 20px;
+            height: 20px;
+            margin: 0;
+
+            &--la {
+                margin: 0;
+            }
+        }
+
+        & &__menu-text {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14px;
+            white-space: nowrap;
+            margin: 10px 0 0 0;
+            color: var(--color-desc);
+
+            &--la {
+                @extend .footer__menu-text;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 680px) {
+        display: none;
+    }
+}
+
+.social-media {
+    width: 144px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+
+    & &__icon {
+        width: 40px;
+        height: 40px;
+        background: var(--color-hover);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        border: none;
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+
+    & &__icon-fb {
+        height: 20px;
+        width: auto;
+    }
+
+    & &__icon-twitter {
+        height: 20px;
+        width: 20px;
+    }
+
+    & &__icon-ig {
+        height: 20px;
+        width: 20px;
+    }
+
+    & &__icon:hover {
+        background: var(--color-icon-hover);
+    }
+
+    @media screen and (max-width: 1020px) {
+        display: none;
+    }
+}

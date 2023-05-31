@@ -1,0 +1,50 @@
+.options {
+    width: 207px;
+    height: 59px;
+    margin: 31px 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+
+    & &__play {
+        height: 59px;
+        width: 59px;
+        cursor: pointer;
+    }
+
+    & &__favourites {
+        width: 32px;
+        height: 27.1px;
+        cursor: pointer;
+    }
+
+    & &__menu {
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 1020px) {
+        width: 191px;
+        height: 55px;
+        margin: 23px 0 23px 16px;
+
+        & &__play {
+            height: 55px;
+            width: 55px;
+        }
+
+        & &__favourites {
+            width: 26px;
+            height: 24px;
+        }
+
+        & &__menu {
+            width: 46px;
+            height: 46px;
+        }
+    }
+
+    @media screen and (max-width: 680px) {
+        align-self: flex-start;
+    }
+}
