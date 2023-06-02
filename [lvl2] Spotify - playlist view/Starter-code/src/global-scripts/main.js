@@ -4,11 +4,12 @@ import '../global-styles/style.scss';
 
 import { songs } from './scripts/data';
 import { createSongBars } from './scripts/createSongBars';
-import { toggleMenu } from './scripts/toggleMenu';
+import { toggleMenu, toggleActive } from './scripts/utils';
 
 export {
     createSongBars,
     songs,
     toggleMenu,
+    toggleActive
 };
 

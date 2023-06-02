@@ -26,7 +26,7 @@
     @media screen and (max-width: 1020px) {
         width: 191px;
         height: 55px;
-        margin: 23px 0 23px 16px;
+        margin: 23px 0 26px 9px;
 
         & &__play {
             height: 55px;
@@ -46,5 +46,10 @@
 
     @media screen and (max-width: 680px) {
         align-self: flex-start;
+        margin: 24px 0 25px 7.5px;
+    }
+
+    @media  screen and (max-width: 320px) {
+        margin-left: 16px;
     }
 }

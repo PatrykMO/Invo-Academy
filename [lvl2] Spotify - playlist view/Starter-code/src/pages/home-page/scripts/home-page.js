@@ -3,6 +3,7 @@
 
 import { songs } from '../../../global-scripts/main';
 import { createSongBars, } from '../../../global-scripts/main';
+import { toggleActive, toggleMenu } from '../../../global-scripts/main';
 import '../styles/home-page.scss';
 
 const html = `
@@ -225,6 +226,9 @@ const songBars = createSongBars(songs);
 songBars.forEach((songBar) => {
   main.appendChild(songBar);
 });
+
+toggleActive();
+toggleMenu();
 
 
 

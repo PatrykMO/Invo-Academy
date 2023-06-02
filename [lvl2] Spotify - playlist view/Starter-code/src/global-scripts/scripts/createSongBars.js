@@ -1,5 +1,5 @@
 import { menuOptions } from './data';
-import { toggleMenu } from './toggleMenu';
+import { toggleMenu } from './utils';
 
 export function createSongBars(songs) {
     const songBars = [];
@@ -38,14 +38,10 @@ export function createSongBars(songs) {
         albumTitle.textContent = song.album;
         infoContainer.appendChild(albumTitle);
 
-        const titleContainer = document.createElement('div');
-        titleContainer.className = 'songbar__info-wrapper';
-        infoContainer.appendChild(titleContainer);
-
         const songTitle = document.createElement('h3');
         songTitle.className = 'songbar__info-song';
         songTitle.textContent = song.song;
-        titleContainer.appendChild(songTitle);
+        infoContainer.appendChild(songTitle);
 
         const artistContainer = document.createElement('div');
         artistContainer.className = 'songbar__artist-container';
@@ -88,7 +84,6 @@ export function createSongBars(songs) {
         const menuContainer = document.createElement('div');
         menuContainer.className = 'songbar__options__menu-container';
         menuContainer.id = 'options-menu';
-        menuContainer.addEventListener('click', () => toggleMenu(menu));
         optionsContainer.appendChild(menuContainer);
 
         const menuIcon = document.createElement('img');
@@ -97,39 +92,8 @@ export function createSongBars(songs) {
         menuIcon.className = 'songbar__options-menu';
         menuContainer.appendChild(menuIcon);
 
-        const menu = document.createElement('div');
-        menu.className = 'menu';
-
-        menuOptions.forEach((option) => {
-            const menuOption = document.createElement('div');
-            menuOption.className = option.classNames.join(' ');
-
-            if (menuOption.className.includes('menu__option')) {
-                const optionText = document.createElement('p');
-                optionText.className = 'menu__option__text';
-                optionText.textContent = option.text;
-                menuOption.appendChild(optionText);
-            } else {
-                const stroke = document.createElement('div');
-                stroke.className = 'menu__stroke';
-            }
-
-            if ((option.classNames.includes('menu__option--underline-arrow')) ||
-            (option.classNames.includes('menu__option--arrow'))) {
-                const arrowIcon = document.createElement('img');
-                arrowIcon.src = '/static/icons/arrow.png';
-                arrowIcon.alt = 'Forward';
-                arrowIcon.className = 'menu__option__arrow';
-                menuOption.appendChild(arrowIcon);
-            }
-
-            menu.appendChild(menuOption);
-        });
-
-        menuContainer.appendChild(menu);
-
         songBars.push(songBar);
-        });
+    });
 
     return songBars;
   };

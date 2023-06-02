@@ -107,6 +107,12 @@
             display: none;
         }
     }
+
+    @media screen and (max-width: 375px) {
+        & &__arrows-container {
+            margin-left: 10px;
+        }
+    }
 }
 
 .navbar__user:hover .navbar__user-hover {

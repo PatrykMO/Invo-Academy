@@ -34,4 +34,17 @@
     @media screen and (max-width: 680px) {
         width: 91.4666%;
     }
+
+    @media screen and (max-width: 375px) {
+        width: 343px;
+        margin: 0 5px;
+    }
+
+    @media screen and (max-width: 360px) {
+        width: 300px;
+    }
+
+    @media screen and (max-width: 310px) {
+        width: 260px;
+    }
 }

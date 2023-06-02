@@ -59,7 +59,7 @@
     }
 
     @media  screen and (max-width: 1020px) {
-        height: 428px;
+        height: 425px;
 
         & &__background {
             height: 100%;
@@ -74,7 +74,7 @@
         & &__content {
             width: 316px;
             height: 166px;
-            left: 30px;
+            left: 23px;
             top: 228px;
             gap: 16px;
         }
@@ -97,16 +97,49 @@
     }
 
     @media  screen and (max-width: 680px) {
-        height: 434px;
+        height: 432px;
 
         & &__background {
-            background-size: 200% 105%;
+            background-size: 204.6% 105%;
             background-position: -340px -10px;
         }
 
         & &__content {
-            left: 32px;
+            left: 24px;
             top: 235px;
+        }
+    }
+
+    @media  screen and (max-width: 360px) {
+        & &__content {
+            width: 240px;
+            height: 180px;
+            left: 23px;
+            top: 218px;
+            gap: 16px;
+        }
+    }
+
+    @media  screen and (max-width: 340px) {
+        & &__background {
+            background-size: 215% 105%;
+        }
+
+        & &__content-desc {
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: -0.0321em;
+        }
+    }
+
+    @media  screen and (max-width: 300px) {
+        & &__background {
+            background-size: 225% 105%;
+        }
+
+        & &__content {
+            width: 240px;
+            left: 20px;
         }
     }
 }
