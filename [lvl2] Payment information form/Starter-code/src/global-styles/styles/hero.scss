@@ -1,0 +1,159 @@
+.hero {
+    width: 60.5555%;
+    height: 100%;
+    background: var(--color-background);
+    margin: 0;
+    position: relative;
+
+    & &__card-back {
+        position: absolute;
+        left: 30.8525%;
+        top: 22.1%;
+        max-width: 580px;
+        width: 67%;
+        max-height: 384px;
+        height: calc(width * 65%);
+        z-index: 0;
+    }
+
+    & &__card-front {
+        position: absolute;
+        left: 2.8818%;
+        top: 31.1566%;
+        max-width: 580px;
+        width: 67%;
+        max-height: 384px;
+        height: calc(width * 65%);
+        z-index: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        min-height: 48.0737%;
+        height: 574px;
+
+        & &__card-back {
+            left: 35.2525%;
+            top: 20.7%;
+            width: 425px;
+            height: 285px;
+        }
+
+        & &__card-front {
+            left: 13.6818%;
+            top: 29.7566%;
+            width: 425px;
+            height: 285px;
+        }
+    }
+
+    @media screen and (max-width: 690px) {
+        height: 372px;
+
+        & &__card-back {
+            left: 41.6453%;
+            top: 27.6881%;
+            width: 325px;
+            height: 245px;
+        }
+
+        & &__card-front {
+            left: 14.4773%;
+            top: 35.4838%;
+            width: 325px;
+            height: 245px;
+        }
+    }
+
+    @media screen and (max-width: 630px) {
+        & &__card-back {
+            left: 35.6453%;
+        }
+    }
+
+    @media screen and (max-width: 540px) {
+        & &__card-back {
+            left: 31.6453%;
+        }
+
+        & &__card-front {
+            left: 5.4773%;
+        }
+    }
+
+    @media screen and (max-width: 520px) {
+        & &__card-back {
+            width: 300px;
+            height: 228px;
+        }
+
+        & &__card-front {
+            width: 300px;
+            height: 228px;
+        }
+    }
+
+
+    @media screen and (max-width: 470px) {
+        & &__card-back {
+            left: 31.6453%;
+            top: 27.6881%;
+            width: 258px;
+            height: 188px;
+        }
+
+        & &__card-front {
+            left: 4.4773%;
+            top: 35.4838%;
+            width: 258px;
+            height: 188px;
+        }
+    }
+
+    @media screen and (max-width: 376px) {
+        & &__card-back {
+            width: 240px;
+            height: 158px;
+        }
+
+        & &__card-front {
+            width: 240px;
+            height: 158px;
+        }
+    }
+
+
+    @media screen and (max-width: 350px) {
+        & &__card-back {
+            left: 35.6453%;
+            top: 27.6881%;
+            width: 200px;
+            height: 130px;
+        }
+
+        & &__card-front {
+            left: 12.4773%;
+            top: 35.4838%;
+            width: 200px;
+            height: 130px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        height: 300px;
+
+        & &__card-back {
+            left: 22.6453%;
+            top: 27.6881%;
+            width: 200px;
+            height: 130px;
+        }
+
+        & &__card-front {
+            left: 8.4773%;
+            top: 35.4838%;
+            width: 200px;
+            height: 130px;
+        }
+    }
+}

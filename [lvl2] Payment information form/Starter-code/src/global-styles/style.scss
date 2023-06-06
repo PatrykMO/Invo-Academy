@@ -1,0 +1,18 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+@import "styles/hero.scss";
+@import "styles/logo.scss";
+@import "styles/form.scss";
+
+body {
+  font-family: 'Montserrat';
+  color: var(--color-text);
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
